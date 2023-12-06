@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hello.apps.HelloConfig',
     'template_app.apps.TemplateAppConfig',
+    'link_app.apps.LinkAppConfig',
+    'inheritnace_app.apps.InheritnaceAppConfig',
 ]
 
 MIDDLEWARE = [
