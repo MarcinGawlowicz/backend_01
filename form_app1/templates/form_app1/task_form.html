@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="zadanie">
+    <input type="submit" value="Zapisz">
+    <ul>
+    {% for task in tasks %}
+        ><li>{% task %} </li>
+    {% endfor %}
+        </ul>
+</form>
+</body>
+</html>

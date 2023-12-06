@@ -22,5 +22,9 @@ urlpatterns = [
     path('hello/', include('hello.urls')),
     path('template/', include('template_app.urls')),
     path('link/', include('link_app.urls')),
-    path('inheritnace/', include('inheritnace_app.urls'))
+    path('inheritnace/', include('inheritnace_app.urls')),
+    path('form1/', include('form_app1.urls')),
+    path('form2/', include('form_app2.urls')),
+
+
 ]
