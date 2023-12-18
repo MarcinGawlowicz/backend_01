@@ -17,16 +17,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include('hello.urls')),
     path('template/', include('template_app.urls')),
     path('link/', include('link_app.urls')),
-    path('inheritnace/', include('inheritnace_app.urls')),
+    path('inheritance/', include('inheritance_app.urls')),
     path('form1/', include('form_app1.urls')),
     path('form2/', include('form_app2.urls')),
     path('form3/', include('form_app3.urls')),
     path('form4/', include('form_app4.urls')),
-
-
+    path('form5/', include('form_app5.urls')),
+    path('relation/', include('relation_app.urls')),
+    path('form6/', include('form_app6.urls')),
+    path('forms/', include('forms_app.urls')),
 ]

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class InheritnaceAppConfig(AppConfig):
+class InheritanceAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'inheritnace_app'
+    name = 'inheritance_app'

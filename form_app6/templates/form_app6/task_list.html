@@ -5,10 +5,11 @@
     <title>Lista zadań</title>
 </head>
 <body>
+<button>Dodaj</button>
   <h2>Lista zadań:</h2>
   <ul>
     {% for task in tasks %}
-      <li>{{ task }}</li>
+      <li>{{ task.name }}</li>
     {% endfor %}
   </ul>
 </body>

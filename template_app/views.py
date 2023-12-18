@@ -3,7 +3,7 @@ from datetime import datetime
 from django.shortcuts import render
 
 
-def isitnewyea(request):
+def isitnewyear(request):
     now = datetime.now()
     if now.month == 1 and now.day == 1:
         is_new_year = True
@@ -14,7 +14,7 @@ def isitnewyea(request):
         request,
         'is_it_new_year.html',
         {
-            'is_new_year': is_new_year
+            'is_new_year': True
         }
     )
 
@@ -28,12 +28,10 @@ def template_view(request):
     user = {
         'name': 'John',
         'surname': 'Doe',
-        'age': 19
+        'age': 10
     }
 
-
     class Cow:
-
         def __init__(self, name):
             self.name = name
 

@@ -5,12 +5,12 @@ from django.shortcuts import render
 def first_view(request):
     return render(
         request,
-        'inheritnace_app/first.html',
+        'inheritance_app/first.html',
     )
 
 
 def second_view(request):
     return render(
         request,
-        'inheritnace_app/second.html',
+        'inheritance_app/second.html'
     )

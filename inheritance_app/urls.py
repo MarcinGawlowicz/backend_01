@@ -1,8 +1,8 @@
 from django.urls import path
 
-from inheritnace_app.views import first_view, second_view
+from inheritance_app.views import first_view, second_view
 
-app_name = "inheritnace_app"
+app_name = "inheritance_app"
 
 urlpatterns = [
     path('first/', first_view, name='first_name'),

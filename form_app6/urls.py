@@ -1,8 +1,8 @@
 from django.urls import path
 
-from form_app4 import views
+from form_app6 import views
 
-app_name = 'form_app4'
+app_name = 'form_app6'
 
 urlpatterns = [
     # C z CRUD

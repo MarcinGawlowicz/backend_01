@@ -1,8 +1,8 @@
 from django.urls import path
 
-from template_app.views import isitnewyea, template_view
+from template_app.views import isitnewyear, template_view
 
 urlpatterns = [
-    path('isitnewyear/', isitnewyea),
+    path('isitnewyear/', isitnewyear),
     path('', template_view),
 ]

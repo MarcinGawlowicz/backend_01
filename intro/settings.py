@@ -15,36 +15,41 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-4uf8t)v3@&6=31yx1%a@_l*r8t8rjc4^@r954pamaodaxgnk25'
+SECRET_KEY = 'django-insecure-u0st=n_^d0=a7z_3=dn%ncbqrv9r4=r0#s_6zt2=vsju+wtw#%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
+    # build-in
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # local
     'hello.apps.HelloConfig',
     'template_app.apps.TemplateAppConfig',
     'link_app.apps.LinkAppConfig',
-    'inheritnace_app.apps.InheritnaceAppConfig',
+    'inheritance_app.apps.InheritanceAppConfig',
     'form_app1.apps.FormApp1Config',
     'form_app2.apps.FormApp2Config',
     'form_app3.apps.FormApp3Config',
     'form_app4.apps.FormApp4Config',
+    'form_app5.apps.FormApp5Config',
+    'relation_app.apps.RelationAppConfig',
+    'form_app6.apps.FormApp6Config',
+    'forms_app.apps.FormsAppConfig',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'intro.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -87,7 +91,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -107,7 +110,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -118,7 +120,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
